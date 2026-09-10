@@ -1,6 +1,7 @@
 
 
 const showMenuButton = document.querySelectorAll(".btn");
+const active = document.querySelectorAll(".active");
 const main = document.querySelector("main");
 const menuButton = document.querySelectorAll(".menu-btn");
 
@@ -22,10 +23,14 @@ showMenuButton.forEach((button) => {
         main.style.transition = "all 0.5s";
 
         showMenuButton.forEach((btn) => {
-            btn.style.opacity = "0.5";
+            btn.style.opacity = "0.7";
+            btn.classList.remove("button-active");
+            btn.querySelector(".active").classList.remove("active-button");
         });
         button.style.opacity = "1";
-        
+        button.classList.add("button-active");
+        button.querySelector(".active").classList.add("active-button");
+
         menuButton.forEach((icon) => {
             
             if (button.className.includes("grid-menu") && icon.className.includes("grid-menu")) {
