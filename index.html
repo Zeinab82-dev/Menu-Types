@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Menu Types</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+        --overlay-bg: rgba(0,0,0,0.4);
+      }
+    </style>
+</head>
+<body class="w-full h-svh #848484">
+
+    <!-- <<< Header >>> -->
+    <header class="fixed w-5xl h-17.5 top-0 left-1/2 -translate-x-1/2 z-20 bg-white/5 backdrop-blur-[4px]">
+    </header>
+    <!-- <<< Display menus page >>> -->
+    <main class="relative max-w-[1024px] h-svh mx-auto bg-[url(/assets/images/background-img-1.jpeg)] bg-cover bg-no-repeat">
+        <div class="fixed w-full max-w-[1024px] h-full top-1/2 left-1/2 -translate-1/2 z-10 bg-(--overlay-bg)"></div>
+
+        <!-- <<< Menu display buttons >>> -->
+        <section class="box-btn fixed top-1/2 left-1/2 -translate-1/2 z-20 pt-30">
+            <section class="btn grid-menu">
+                <div class="img-box">
+                    <img src="./assets/images/icon-img/grid.png" alt="" class="">
+                </div>
+                <p class="">
+                    Grid
+                    <br>
+                    Menu
+                </p>
+            </section>
+            <section class="btn side-menu">
+                <div class="img-box">
+                    <img src="./assets/images/icon-img/side.png" alt="" class="">
+                </div>
+                <p class="">
+                    Side
+                    <br>
+                    Menu
+                </p>
+            </section>
+            <section class="btn tab-menu">
+                <div class="img-box">
+                    <img src="./assets/images/icon-img/tab.png" alt="" class="">
+                </div>
+                <p class="">
+                    Tab Bar
+                    <br>
+                    Menu
+                </p>
+            </section>
+            <section class="btn fab-menu">
+                <div class="img-box">
+                    <img src="./assets/images/icon-img/fab.png" alt="" class="">
+                </div>
+                <p class="">
+                    FAB
+                    <br>
+                    Menu
+                </p>
+            </section>
+            <section class="btn sheet-menu">
+                <div class="img-box">
+                    <img src="" alt="" class="">
+                </div>
+                <p class="">
+                    Sheet
+                    <br>
+                    Menu
+                </p>
+            </section>
+            <section class="btn dot-menu">
+                <div class="img-box">
+                    <img src="" alt="" class="">
+                </div>
+                <p class="">
+                    Three Dots
+                    <br>
+                    Menu
+                </p>
+            </section>
+            <section class="btn rectangular-menu">
+                <div class="img-box">
+                    <img src="" alt="" class="">
+                </div>
+                <p class="">
+                    Rectangular
+                    <br>
+                    Menu
+                </p>
+            </section>
+            <section class="btn rudder-menu">
+                <div class="img-box">
+                    <img src="" alt="" class="">
+                </div>
+                <p class="">
+                    Rudder
+                    <br>
+                    Menu
+                </p>
+            </section>
+        </section>
+
+        <!-- <<< Menu Buttons >>> -->
+        <section class="">
+            <!-- <<< Grid Menu Button >>> -->
+            <button class="menu-btn grid-menu absolute top-5 left-5 z-20 text-white">
+                <svg class="size-10" viewBox="0 0 24 24" fill="currentcolor">
+                    <use href="./assets/icons/icons.svg#grid-menu-icon"></use>
+                </svg>
+            </button>
+            <!-- <<< Side Menu Button >>> -->
+            <button class="menu-btn side-menu absolute top-5 left-5 z-20 text-white">
+                <svg class="size-10" viewBox="0 0 24 24" fill="currentcolor">
+                    <use href="./assets/icons/icons.svg#side-menu-icon"></use>
+                </svg>
+            </button>
+            <!-- <<< TabBar Menu Button >>> -->
+            <button class="menu-btn tab-menu absolute top-5 left-5 z-20 text-white">
+                <svg class="size-10" viewBox="0 0 24 24" fill="currentcolor">
+                    <use href="./assets/icons/icons.svg#"></use>
+                </svg>
+            </button>
+            <!-- <<< FAB Menu Button >>> -->
+            <button class="menu-btn fab-menu absolute bottom-5 right-5 z-20 text-white">
+                <svg class="size-10" viewBox="0 0 24 24" fill="currentcolor">
+                    <use href="./assets/icons/icons.svg#fab-menu-icon"></use>
+                </svg>
+            </button>
+            <!-- <<< Sheet Menu Button >>> -->
+            <button class="menu-btn sheet-menu absolute top-5 left-5 z-20 text-white">
+                <svg class="size-10" viewBox="0 0 24 24" fill="currentcolor">
+                    <use href="./assets/icons/icons.svg#"></use>
+                </svg>
+            </button>
+            <!-- <<< ThreeDot Menu Button >>> -->
+            <button class="menu-btn dot-menu absolute top-5 right-5 z-20 text-white">
+                <svg class="size-10" viewBox="0 0 24 24" fill="currentcolor">
+                    <use href="./assets/icons/icons.svg#treedots-menu-icon"></use>
+                </svg>
+            </button>
+            <!-- <<< Rectangular Menu Button >>> -->
+            <button class="menu-btn rectangular-menu absolute top-5 left-5 z-20 text-white">
+                <svg class="size-10" viewBox="0 0 24 24" fill="currentcolor">
+                    <use href="./assets/icons/icons.svg#"></use>
+                </svg>
+            </button>
+            <!-- <<< Rudder Menu Button >>> -->
+            <button class="menu-btn rudder-menu absolute top-5 left-5 z-20 text-white">
+                <svg class="size-10" viewBox="0 0 24 24" fill="currentcolor">
+                    <use href="./assets/icons/icons.svg#"></use>
+                </svg>
+            </button>
+        </section>
+    </main>
+
+
+    <script src="./script/script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,72 @@
+btn {
+    width: 200px;
+    height: 45px;
+    font-size: 1.125rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    color: #031291;
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(7px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.4), 0 0 15px rgba(0,0,0,0.6) inset;
+}
+
+.box-btn {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 25px;
+    scale: 0.8;
+}
+.btn {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    padding: 5px;
+    color: #031291;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.4);
+    background: rgba(255,255,255,0.3);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.4), 0 0 15px rgba(0,0,0,0.6) inset;
+}
+.img-box {
+    width: 70px;
+    height: 70px;
+}
+.btn p {
+    font-size: 1.1rem;
+    font-weight: 800;
+    line-height: 1.4;
+    text-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+.menu-btn {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+
+.display-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
