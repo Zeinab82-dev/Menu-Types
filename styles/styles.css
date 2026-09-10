@@ -47,7 +47,7 @@ btn {
     border-radius: 50%;
     background: rgb(3,209,3);
     animation: active 1s ease infinite alternate;
-    visibility: hidden;
+    display: none;
     transition: all 0.5s;
     
 }
@@ -104,5 +104,5 @@ img {
 }
 
 .active-button {
-    visibility: visible;
+    display: block;
 }
