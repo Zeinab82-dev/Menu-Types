@@ -14,7 +14,7 @@ showMenuButton.forEach((button) => {
         let random = Math.trunc(Math.random() * 12) + 1;
         
         
-        main.style.background = `url(/assets/images/background-img-${random}.jpeg)`;
+        main.style.background = `url(./assets/images/background-img-${random}.jpeg)`;
     
         main.style.backgroundSize= "cover";
         main.style.backgroundRepeat= "no-repeat";
