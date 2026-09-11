@@ -1,3 +1,25 @@
+@font-face {
+    font-family: "Logo Font";
+    src: url(../assets/fonts/LobsterTwo-Bold.ttf);
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter Bold";
+    src: url(../assets/fonts/InterTight-ExtraBold.ttf);
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter Regular";
+    src: url(../assets/fonts/InterTight-Regular.ttf);
+    font-display: swap;
+}
+
+body {
+    font-family: "Inter Regular";
+}
+.logo {
+    font-family: "Logo Font";
+}
 .box-btn {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -11,13 +33,14 @@
     align-items: center;
     gap: 10px;
     text-align: center;
+    font-family: "Inter Bold";
     padding: 5px;
     color: #031291;
     border-radius: 10px;
     border: 1px solid rgba(255,255,255,0.4);
     background: rgba(255,255,255,0.3);
     backdrop-filter: blur(5px);
-    box-shadow: 0 0 15px rgba(0,0,0,0.4), 0 0 15px rgba(0,0,0,0.6) inset;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7), 0 0 15px rgba(0,0,0,0.6) inset;
     transition: all 0.5s;
     position: relative;
 }
