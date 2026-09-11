@@ -3,6 +3,7 @@
 const showMenuButton = document.querySelectorAll(".btn");
 const active = document.querySelectorAll(".active");
 const main = document.querySelector("main");
+const bgImg = document.querySelector(".bg-img");
 const menuButton = document.querySelectorAll(".menu-btn");
 
 
@@ -23,11 +24,11 @@ showMenuButton.forEach((button) => {
     button.addEventListener("click", () => {
         let random = Math.trunc(Math.random() * 12) + 1;
         
-        main.style.background = `url(./assets/images/background-img-${random}.jpeg)`;
-    
-        main.style.backgroundSize= "cover";
-        main.style.backgroundRepeat= "no-repeat";
-        main.style.backgroundPosition= "center";
+        bgImg.style.opacity = "0";
+        setTimeout(() => {
+            bgImg.src = `./assets/images/background-img-${random}.jpeg`;
+            bgImg.style.opacity = "1";
+        },50);
         
 
         showMenuButton.forEach((btn) => {
