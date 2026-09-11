@@ -11,7 +11,7 @@ const images = [];
 
 for (let i = 1; i <= 12; i++) {
     const img = new Image();
-    img.src = `./assets/images/background-img-${i}jpeg.`;
+    img.src = `./assets/images/background-img-${i}.jpeg`;
     images.push(img);
 }
 
@@ -22,7 +22,6 @@ for (let i = 1; i <= 12; i++) {
 showMenuButton.forEach((button) => {
     button.addEventListener("click", () => {
         let random = Math.trunc(Math.random() * 12) + 1;
-        
         
         main.style.background = `url(./assets/images/background-img-${random}.jpeg)`;
     
@@ -71,18 +70,6 @@ showMenuButton.forEach((button) => {
                 icon.classList.remove("display-menu");
                 
             }
-
-            
-            
         });
-        
-
-        
-
-        
     });
-    
-    
-    
-    
 });
