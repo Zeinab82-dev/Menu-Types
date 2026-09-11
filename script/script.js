@@ -7,6 +7,15 @@ const menuButton = document.querySelectorAll(".menu-btn");
 
 
 
+const images = [];
+
+for (let i = 1; i <= 12; i++) {
+    const img = new Image();
+    img.src = `./assets/images/background-img-${i}jpeg.`;
+    images.push(img);
+}
+
+
 
 
 
@@ -20,7 +29,7 @@ showMenuButton.forEach((button) => {
         main.style.backgroundSize= "cover";
         main.style.backgroundRepeat= "no-repeat";
         main.style.backgroundPosition= "center";
-        main.style.transition = "all 0.5s";
+        
 
         showMenuButton.forEach((btn) => {
             btn.style.opacity = "0.7";
