@@ -6,6 +6,10 @@ const main = document.querySelector("main");
 const bgImg = document.querySelector(".bg-img");
 const menuButton = document.querySelectorAll(".menu-btn");
 
+// <<< Select menu side elements >>>
+const sideMenuButton = document.querySelector(".side-menu-btn");
+const sideMenu = document.querySelector("#side-menu");
+const sideMenuCloseButton = document.querySelector(".side-close-btn");
 
 
 const images = [];
@@ -73,4 +77,24 @@ showMenuButton.forEach((button) => {
             }
         });
     });
+});
+
+
+
+
+
+// <<< Open side menu >>>
+sideMenuButton.addEventListener("click", () => {
+    sideMenu.classList.add("left-0");
+    setTimeout(() => {
+        sideMenu.classList.add("bg-black/30","backdrop-blur-[8px]");
+    },400);
+});
+
+// <<< Close side menu >>>
+sideMenuCloseButton.addEventListener("click", () => {
+    sideMenu.classList.remove("bg-black/30","backdrop-blur-[8px]");
+    setTimeout(() => {
+        sideMenu.classList.remove("left-0");
+    },200);
 });

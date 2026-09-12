@@ -10,10 +10,12 @@
       @theme {
         --color-clifford: #da373d;
         --overlay-bg: rgba(0,0,0,0.4);
+        --border-b-items: rgba(255,255,255,0.2);
+        --hover-menu-items: rgba(255,255,255,0.2);
       }
     </style>
 </head>
-<body class="w-full h-svh #848484 flex items-center justify-center">
+<body class="w-full h-svh #848484 flex items-center justify-center overflow-hidden">
 
     <!-- <<< Header >>> -->
     <header class="fixed w-full max-w-5xl h-17.5 top-0 left-1/2 -translate-x-1/2 z-20 bg-white/5 backdrop-blur-[4px] flex items-center justify-center">
@@ -22,7 +24,7 @@
         </h1>
     </header>
     <!-- <<< Display menus page >>> -->
-    <main class="relative w-full max-w-[1024px] h-svh mx-auto">
+    <main class="relative w-full max-w-[1024px] h-svh mx-auto overflow-hidden">
         <div class="absolute w-full h-full inset-0">
             <img src="./assets/images/background-img-1.jpeg" alt="" class="bg-img w-full h-full object-cover object-center transition-all duration-500 delay-500">
         </div>
@@ -129,7 +131,7 @@
                 </svg>
             </button>
             <!-- <<< Side Menu Button >>> -->
-            <button class="menu-btn side-menu absolute top-5 left-5 z-20 text-white">
+            <button class="menu-btn side-menu side-menu-btn absolute top-5 left-5 z-20 text-white">
                 <svg class="size-10" viewBox="0 0 24 24" fill="currentcolor">
                     <use href="./assets/icons/icons.svg#side-menu-icon"></use>
                 </svg>
@@ -171,6 +173,60 @@
                 </svg>
             </button>
         </section>
+
+        <!-- <<< Menu >>> -->
+        <!-- <<< Grid menu >>> -->
+        <!-- <<< Side menu >>> -->
+        <section id="side-menu" class="absolute w-full max-w-5xl h-full z-30 transition-all duration-500 -left-full">
+            <section class="relative w-[280px] h-full px-5 py-10 bg-[#000443] shadow-[0_0_40px_rgba(0,0,0,0.5)_inset]">
+                <ul class="flex flex-col mt-28 text-white">
+                    <li class="flex gap-4 items-center px-5 py-5 border-b border-(--border-b-items) capitalize rounded-t-[10px] transition-all duration-300 hover:bg-(--hover-menu-items)">
+                        <svg class="size-[23px] fill-white">
+                            <use href="./assets/icons/icons.svg#home-icon"></use>
+                        </svg>
+                        home
+                    </li>
+                    <li class="flex gap-4 items-center px-5 py-5 border-b border-(--border-b-items) capitalize transition-all duration-300 hover:bg-(--hover-menu-items)">
+                        <svg class="size-[23px] fill-white">
+                            <use href="./assets/icons/icons.svg#project-icon"></use>
+                        </svg>
+                        projects
+                    </li>
+                    <li class="flex gap-4 items-center px-5 py-5 border-b border-(--border-b-items) capitalize transition-all duration-300 hover:bg-(--hover-menu-items)">
+                        <svg class="size-[23px] fill-white">
+                            <use href="./assets/icons/icons.svg#heart-icon"></use>
+                        </svg>
+                        favorites
+                    </li>
+                    <li class="flex gap-4 items-center px-5 py-5 border-b border-(--border-b-items) capitalize transition-all duration-300 hover:bg-(--hover-menu-items)">
+                        <svg class="size-[23px] fill-white">
+                            <use href="./assets/icons/icons.svg#email-icon"></use>
+                        </svg>
+                        contact us
+                    </li>
+                    <li class="flex gap-4 items-center px-5 py-5 capitalize rounded-b-[10px] transition-all duration-300 hover:bg-(--hover-menu-items)">
+                        <svg class="size-[23px] fill-white">
+                            <use href="./assets/icons/icons.svg#settings-icon"></use>
+                        </svg>
+                        settings
+                    </li>
+                </ul>
+                <button class="side-close-btn absolute top-14 right-8">
+                    <svg class="size-7.5">
+                        <use href="./assets/icons/icons.svg#close-menu-icon" class="fill-white"></use>
+                    </svg>
+                </button>
+            </section>
+        </section>
+        <!-- <<< Tab Bar menu >>> -->
+        <!-- <<< FAB menu >>> -->
+        <!-- <<< Sheet menu >>> -->
+        <!-- <<< Three Dots menu >>> -->
+        <!-- <<< Rectangular menu >>> -->
+        <!-- <<< Rudder menu >>> -->
+        
+
+        
     </main>
 
 
