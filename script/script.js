@@ -6,6 +6,11 @@ const main = document.querySelector("main");
 const bgImg = document.querySelector(".bg-img");
 const menuButton = document.querySelectorAll(".menu-btn");
 
+// <<< Select menu grid elements >>>
+const gridMenuButton = document.querySelector(".grid-menu-btn");
+const gridMenu = document.querySelector("#grid-menu");
+const gridMenuCloseButton = document.querySelector(".grid-close-btn");
+
 // <<< Select menu side elements >>>
 const sideMenuButton = document.querySelector(".side-menu-btn");
 const sideMenu = document.querySelector("#side-menu");
@@ -80,6 +85,20 @@ showMenuButton.forEach((button) => {
 });
 
 
+
+
+
+// <<< Open grid menu >>>
+gridMenuButton.addEventListener("click", () => {
+    gridMenu.classList.add("open-grid-menu");
+    
+});
+
+// <<< Close grid menu >>>
+gridMenuCloseButton.addEventListener("click", () => {
+    gridMenu.classList.remove("open-grid-menu");
+    
+});
 
 
 

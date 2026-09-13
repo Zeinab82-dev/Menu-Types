@@ -86,10 +86,13 @@ img {
     object-fit: cover;
 }
 
-
-
-
-
+/* <<< Grid Menu>>> */
+#grid-menu {
+    clip-path: circle(0% at 0% 0%);
+}
+.open-grid-menu {
+    clip-path: circle(150% at 0% 0%) !important;
+}
 
 
 
@@ -100,7 +103,6 @@ img {
     visibility: hidden;
     transition: all 0.5s;
 }
-
 
 .display-menu {
     opacity: 1;

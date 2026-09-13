@@ -125,7 +125,7 @@
         <!-- <<< Menu Buttons >>> -->
         <section class="">
             <!-- <<< Grid Menu Button >>> -->
-            <button class="menu-btn grid-menu absolute top-5 left-5 z-20 text-white">
+            <button class="menu-btn grid-menu grid-menu-btn absolute top-5 left-5 z-20 text-white">
                 <svg class="size-10" viewBox="0 0 24 24" fill="currentcolor">
                     <use href="./assets/icons/icons.svg#grid-menu-icon"></use>
                 </svg>
@@ -176,6 +176,65 @@
 
         <!-- <<< Menu >>> -->
         <!-- <<< Grid menu >>> -->
+        <section id="grid-menu" class="absolute z-30 bg-linear-[135deg,rgb(174,179,254),rgb(128,136,254),rgb(95,105,254)] transition-all duration-700 inset-0">
+            <section class="relative w-full h-full flex items-center justify-center">
+                <ul class="grid grid-cols-2 gap-6">
+                    <li class="w-34 py-7 flex flex-col items-center gap-3 text-white rounded-[10px] bg-[#000443] shadow-[0_0_12px_rgba(0,0,0,0.5),0_0_15px_rgba(255,255,255,0.2)_inset]">
+                        <svg class="size-[30px] fill-white">
+                            <use href="./assets/icons/icons.svg#home-icon"></use>
+                        </svg>
+                        <h3 class="capitalize">
+                            home
+                        </h3>
+                    </li>
+                    <li class="w-34 py-7 flex flex-col items-center gap-3 text-white rounded-[10px] bg-[#000443] shadow-[0_0_12px_rgba(0,0,0,0.5),0_0_15px_rgba(255,255,255,0.2)_inset]">
+                        <svg class="size-[30px] fill-white">
+                            <use href="./assets/icons/icons.svg#search-icon"></use>
+                        </svg>
+                        <h3 class="capitalize">
+                            search
+                        </h3>
+                    </li>
+                    <li class="w-34 py-7 flex flex-col items-center gap-3 text-white rounded-[10px] bg-[#000443] shadow-[0_0_12px_rgba(0,0,0,0.5),0_0_15px_rgba(255,255,255,0.2)_inset]">
+                        <svg class="size-[30px] fill-white">
+                            <use href="./assets/icons/icons.svg#order-icon"></use>
+                        </svg>
+                        <h3 class="capitalize">
+                            orders
+                        </h3>
+                    </li>
+                    <li class="w-34 py-7 flex flex-col items-center gap-3 text-white rounded-[10px] bg-[#000443] shadow-[0_0_12px_rgba(0,0,0,0.5),0_0_15px_rgba(255,255,255,0.2)_inset]">
+                        <svg class="size-[30px] fill-white">
+                            <use href="./assets/icons/icons.svg#profile-icon"></use>
+                        </svg>
+                        <h3 class="capitalize">
+                            profile
+                        </h3>
+                    </li>
+                    <li class="w-34 py-7 flex flex-col items-center gap-3 text-white rounded-[10px] bg-[#000443] shadow-[0_0_12px_rgba(0,0,0,0.5),0_0_15px_rgba(255,255,255,0.2)_inset]">
+                        <svg class="size-[30px] fill-white">
+                            <use href="./assets/icons/icons.svg#settings-icon"></use>
+                        </svg>
+                        <h3 class="capitalize">
+                            settings
+                        </h3>
+                    </li>
+                    <li class="w-34 py-7 flex flex-col items-center gap-3 text-white rounded-[10px] bg-[#000443] shadow-[0_0_12px_rgba(0,0,0,0.5),0_0_15px_rgba(255,255,255,0.2)_inset]">
+                        <svg class="size-[30px] fill-white">
+                            <use href="./assets/icons/icons.svg#help-icon"></use>
+                        </svg>
+                        <h3 class="capitalize">
+                            help
+                        </h3>
+                    </li>
+                </ul>
+                <button class="grid-close-btn size-10 rounded-[10px] flex items-center justify-center absolute top-10 left-7 bg-[#000443] shadow-[0_0_12px_rgba(0,0,0,0.5),0_0_15px_rgba(255,255,255,0.2)_inset]">
+                    <svg class="size-7.5 fill-white">
+                        <use href="./assets/icons/icons.svg#close-menu-icon"></use>
+                    </svg>
+                </button>
+            </section>
+        </section>
         <!-- <<< Side menu >>> -->
         <section id="side-menu" class="absolute w-full max-w-5xl h-full z-30 transition-all duration-500 -left-full">
             <section class="relative w-[280px] h-full px-5 py-10 bg-[#000443] shadow-[0_0_40px_rgba(0,0,0,0.5)_inset]">
