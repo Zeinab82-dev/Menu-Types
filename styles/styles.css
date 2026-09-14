@@ -94,27 +94,7 @@ img {
     clip-path: circle(150% at 0% 0%) !important;
 }
 
-
-/* 
-#tabbar-menu li::after {
-    content: "";
-    position: absolute;
-    width: 64px;
-    height: 64px;
-    bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background: #000443;
-}
-li svg {
-    fill: white;
-}
- */
-
+/* <<< Tab Bar Menu>>> */
 .tab-open {
     width: 64px;
     height: 64px;

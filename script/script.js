@@ -141,7 +141,7 @@ sideMenuCloseButton.addEventListener("click", () => {
     },200);
 });
 
-// <<< FAB side menu >>>
+// <<< Tab Bar menu >>>
 tabbarMenuItem.forEach((tabItem) => {
     tabbarMenuItemHome.classList.add("tab-open");
     tabbarMenuItemHome.querySelector(".tab-svg").classList.add("tab-icon");
@@ -156,7 +156,7 @@ tabbarMenuItem.forEach((tabItem) => {
 });
 
 
-// <<< FAB side menu >>>
+// <<< FAB menu >>>
 fabMenuButton.addEventListener("click", () => {
     fabMenu.classList.toggle("scale-y-100");
     fabMenu.classList.toggle("bottom-24");
