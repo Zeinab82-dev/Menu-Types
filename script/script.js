@@ -26,6 +26,12 @@ const tabbarMenuItemHome = document.querySelector(".home");
 const fabMenuButton = document.querySelector(".fab-menu-btn");
 const fabMenu = document.querySelector("#fab-menu");
 
+// <<< Select menu Rudder elements >>>
+const rudderMenuButton = document.querySelector(".rudder-btn");
+const rudderMenu = document.querySelector("#rudder-menu");
+const rudderMenuItemRight = document.querySelector(".rudder-item-right");
+const rudderMenuItemLeft = document.querySelector(".rudder-item-left");
+
 
 
 
@@ -53,6 +59,10 @@ showMenuButton.forEach((button) => {
 
         tabbarMenu.classList.remove("bottom-0");
         fabMenu.classList.remove("scale-y-100","bottom-24","opacity-100");
+        rudderMenu.classList.remove("bottom-0");
+        rudderMenuItemLeft.classList.remove("right-21","-translate-x-[21]");
+    rudderMenuItemRight.classList.remove("left-13","-translate-x-[13]");
+        rudderMenuButton.classList.remove("rotate-45");
         
         showMenuButton.forEach((btn) => {
             btn.style.opacity = "0.7";
@@ -96,6 +106,7 @@ showMenuButton.forEach((button) => {
                 icon.classList.add("display-menu");
             }
             else if (button.className.includes("rudder-menu") && icon.className.includes("rudder-menu")) {
+                rudderMenu.classList.add("bottom-0");
                 icon.classList.add("display-menu");
             }
             else {
@@ -161,4 +172,19 @@ fabMenuButton.addEventListener("click", () => {
     fabMenu.classList.toggle("scale-y-100");
     fabMenu.classList.toggle("bottom-24");
     fabMenu.classList.toggle("opacity-100");
+});
+
+
+// <<< Rudder menu >>>
+rudderMenuButton.addEventListener("click", () => {
+
+    rudderMenuButton.classList.toggle("rotate-45");
+    if (rudderMenuButton.classList.contains("rotate-45")) {
+        rudderMenuItemLeft.classList.add("right-21","-translate-x-[21]");
+    rudderMenuItemRight.classList.add("left-13","-translate-x-[13]");
+    }
+    else {
+        rudderMenuItemLeft.classList.remove("right-21","-translate-x-[21]");
+    rudderMenuItemRight.classList.remove("left-13","-translate-x-[13]");
+    }
 });
