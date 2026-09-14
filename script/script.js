@@ -16,6 +16,11 @@ const sideMenuButton = document.querySelector(".side-menu-btn");
 const sideMenu = document.querySelector("#side-menu");
 const sideMenuCloseButton = document.querySelector(".side-close-btn");
 
+// <<< Select menu FAB elements >>>
+const fabMenuButton = document.querySelector(".fab-menu-btn");
+const fabMenu = document.querySelector("#fab-menu");
+
+
 
 const images = [];
 
@@ -39,7 +44,7 @@ showMenuButton.forEach((button) => {
             bgImg.style.opacity = "1";
         },50);
         
-
+        fabMenu.classList.remove("scale-y-100","bottom-24","opacity-100");
         showMenuButton.forEach((btn) => {
             btn.style.opacity = "0.7";
             btn.classList.remove("button-active");
@@ -116,4 +121,12 @@ sideMenuCloseButton.addEventListener("click", () => {
     setTimeout(() => {
         sideMenu.classList.remove("left-0");
     },200);
+});
+
+
+// <<< FAB side menu >>>
+fabMenuButton.addEventListener("click", () => {
+    fabMenu.classList.toggle("scale-y-100");
+    fabMenu.classList.toggle("bottom-24");
+    fabMenu.classList.toggle("opacity-100");
 });
