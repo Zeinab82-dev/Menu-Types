@@ -16,9 +16,16 @@ const sideMenuButton = document.querySelector(".side-menu-btn");
 const sideMenu = document.querySelector("#side-menu");
 const sideMenuCloseButton = document.querySelector(".side-close-btn");
 
+// <<< Select menu Tab Bar elements >>>
+const tabbarMenu = document.querySelector("#tabbar-menu");
+const tabbarMenuItem = document.querySelectorAll(".tab-item");
+const tabbarMenuIcon = document.querySelectorAll(".tab-svg");
+const tabbarMenuItemHome = document.querySelector(".home");
+
 // <<< Select menu FAB elements >>>
 const fabMenuButton = document.querySelector(".fab-menu-btn");
 const fabMenu = document.querySelector("#fab-menu");
+
 
 
 
@@ -43,8 +50,10 @@ showMenuButton.forEach((button) => {
             bgImg.src = `./assets/images/background-img-${random}.jpeg`;
             bgImg.style.opacity = "1";
         },50);
-        
+
+        tabbarMenu.classList.remove("bottom-0");
         fabMenu.classList.remove("scale-y-100","bottom-24","opacity-100");
+        
         showMenuButton.forEach((btn) => {
             btn.style.opacity = "0.7";
             btn.classList.remove("button-active");
@@ -63,6 +72,15 @@ showMenuButton.forEach((button) => {
                 icon.classList.add("display-menu");
             }
             else if (button.className.includes("tab-menu") && icon.className.includes("tab-menu")) {
+                tabbarMenuIcon.forEach((tIcon) => {
+                    tIcon.classList.remove("tab-icon");
+                });
+                tabbarMenuItem.forEach((tItem) => {
+                    tItem.classList.remove("tab-open");
+                });
+                tabbarMenuItemHome.classList.add("tab-open");
+                tabbarMenuItemHome.querySelector(".tab-svg").classList.add("tab-icon");
+                tabbarMenu.classList.add("bottom-0");
                 icon.classList.add("display-menu");
             }
             else if (button.className.includes("fab-menu") && icon.className.includes("fab-menu")) {
@@ -121,6 +139,20 @@ sideMenuCloseButton.addEventListener("click", () => {
     setTimeout(() => {
         sideMenu.classList.remove("left-0");
     },200);
+});
+
+// <<< FAB side menu >>>
+tabbarMenuItem.forEach((tabItem) => {
+    tabbarMenuItemHome.classList.add("tab-open");
+    tabbarMenuItemHome.querySelector(".tab-svg").classList.add("tab-icon");
+    tabItem.addEventListener("click",() => {
+        tabbarMenuItem.forEach((tbItem) => {
+            tbItem.classList.remove("tab-open");
+            tbItem.querySelector(".tab-svg").classList.remove("tab-icon");
+        });
+        tabItem.classList.add("tab-open");
+        tabItem.querySelector(".tab-svg").classList.add("tab-icon");
+    });
 });
 
 
