@@ -30,6 +30,13 @@ const fabMenu = document.querySelector("#fab-menu");
 const threeDotsMenu = document.querySelector("#threedots-menu");
 const threeDotsMenuButton = document.querySelector(".dots-menu-btn");
 
+// <<< Select menu Rectangular elements >>>
+const rectangularMenu = document.querySelector("#rectangular-menu");
+const rectangularMenuList = document.querySelector(".rect-list");
+const rectangularMenuItem = document.querySelectorAll(".rect-item");
+const rectangularMenuItemText = document.querySelectorAll(".rect-item-text");
+const rectangularMenuButton = document.querySelector(".rectangular-menu-btn");
+
 // <<< Select menu Rudder elements >>>
 const rudderMenuButton = document.querySelector(".rudder-btn");
 const rudderMenu = document.querySelector("#rudder-menu");
@@ -68,6 +75,24 @@ showMenuButton.forEach((button) => {
     rudderMenuItemRight.classList.remove("left-13","-translate-x-[13]");
         rudderMenuButton.classList.remove("rotate-45");
         threeDotsMenu.classList.remove("opacity-100","scale-100","top-24","right-5");
+
+        rectangularMenu.classList.remove("w-[180px]");
+        rectangularMenu.classList.remove("!left-0");
+    
+    rectangularMenuButton.classList.remove("rotate-180");
+    rectangularMenuItemText.forEach((rectText) => {
+        setTimeout(() => {
+            rectText.classList.remove("!block");
+
+            rectangularMenuList.classList.remove("items-start");
+
+            rectangularMenu.classList.remove("px-6");
+
+            rectangularMenuItem.forEach((rectItem) => {
+                rectItem.classList.remove("w-full");
+            });
+        },200);
+    });
         
         showMenuButton.forEach((btn) => {
             btn.style.opacity = "0.8";
@@ -109,6 +134,7 @@ showMenuButton.forEach((button) => {
             }
             else if (button.className.includes("rectangular-menu") && icon.className.includes("rectangular-menu")) {
                 icon.classList.add("display-menu");
+                rectangularMenu.classList.add("!left-0")
             }
             else if (button.className.includes("rudder-menu") && icon.className.includes("rudder-menu")) {
                 rudderMenu.classList.add("bottom-0");
@@ -188,6 +214,28 @@ threeDotsMenuButton.addEventListener("click", () => {
     else {
         threeDotsMenu.classList.remove("opacity-100","scale-100","top-24","right-5");
     }
+});
+
+
+// <<< Rectangular menu >>>
+rectangularMenuButton.addEventListener("click", () => {
+    rectangularMenu.classList.toggle("w-[180px]");
+    
+    
+    rectangularMenuButton.classList.toggle("rotate-180");
+    rectangularMenuItemText.forEach((rectText) => {
+        setTimeout(() => {
+            rectText.classList.toggle("!block");
+
+            rectangularMenuList.classList.toggle("items-start");
+
+            rectangularMenu.classList.toggle("px-6");
+
+            rectangularMenuItem.forEach((rectItem) => {
+                rectItem.classList.toggle("w-full");
+            });
+        },200);
+    });
 });
 
 
