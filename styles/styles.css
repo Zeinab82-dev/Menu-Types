@@ -4,18 +4,13 @@
     font-display: swap;
 }
 @font-face {
-    font-family: "Inter Bold";
-    src: url(../assets/fonts/InterTight-ExtraBold.ttf);
-    font-display: swap;
-}
-@font-face {
-    font-family: "Inter Regular";
-    src: url(../assets/fonts/InterTight-Regular.ttf);
+    font-family: "Open Sans";
+    src: url(../assets/fonts/OpenSans_Condensed-Medium.ttf);
     font-display: swap;
 }
 
 body {
-    font-family: "Inter Regular";
+    font-family: "sansserif";
 }
 .logo {
     font-family: "Logo Font";
@@ -39,7 +34,7 @@ body {
     border-radius: 10px;
     border: 1px solid rgba(255,255,255,0.4);
     background: rgba(255,255,255,0.3);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(6px);
     box-shadow: 0 0 15px rgba(0,0,0,0.7), 0 0 15px rgba(0,0,0,0.6) inset;
     transition: all 0.5s;
     position: relative;
@@ -94,7 +89,7 @@ img {
     clip-path: circle(150% at 0% 0%) !important;
 }
 
-/* <<< Tab Bar Menu>>> */
+/* <<< Tab Bar Menu >>> */
 .tab-open {
     width: 64px;
     height: 64px;
@@ -106,6 +101,14 @@ img {
     fill: #fff;
     width: 32px;
     height: 32px;
+}
+
+/* <<< Three Dots Menu >>> */
+.display-threedots-menu {
+    opacity: 1;
+    transform: scale(1);
+    top: 100px;
+    right: 25px;
 }
 
 

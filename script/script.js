@@ -26,6 +26,10 @@ const tabbarMenuItemHome = document.querySelector(".home");
 const fabMenuButton = document.querySelector(".fab-menu-btn");
 const fabMenu = document.querySelector("#fab-menu");
 
+// <<< Select menu Three Dots elements >>>
+const threeDotsMenu = document.querySelector("#threedots-menu");
+const threeDotsMenuButton = document.querySelector(".dots-menu-btn");
+
 // <<< Select menu Rudder elements >>>
 const rudderMenuButton = document.querySelector(".rudder-btn");
 const rudderMenu = document.querySelector("#rudder-menu");
@@ -63,9 +67,10 @@ showMenuButton.forEach((button) => {
         rudderMenuItemLeft.classList.remove("right-21","-translate-x-[21]");
     rudderMenuItemRight.classList.remove("left-13","-translate-x-[13]");
         rudderMenuButton.classList.remove("rotate-45");
+        threeDotsMenu.classList.remove("opacity-100","scale-100","top-24","right-5");
         
         showMenuButton.forEach((btn) => {
-            btn.style.opacity = "0.7";
+            btn.style.opacity = "0.8";
             btn.classList.remove("button-active");
             btn.querySelector(".active").classList.remove("active-button");
         });
@@ -172,6 +177,17 @@ fabMenuButton.addEventListener("click", () => {
     fabMenu.classList.toggle("scale-y-100");
     fabMenu.classList.toggle("bottom-24");
     fabMenu.classList.toggle("opacity-100");
+});
+
+
+// <<< Three Dots menu >>>
+threeDotsMenuButton.addEventListener("click", () => {
+    if (!threeDotsMenu.classList.contains("scale-100")) {
+        threeDotsMenu.classList.add("opacity-100","scale-100","top-24","right-5");
+    }
+    else {
+        threeDotsMenu.classList.remove("opacity-100","scale-100","top-24","right-5");
+    }
 });
 
 
