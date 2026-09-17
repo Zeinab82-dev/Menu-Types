@@ -83,6 +83,7 @@ showMenuButton.forEach((button) => {
 
         rectangularMenu.classList.remove("w-[180px]");
         rectangularMenu.classList.remove("!left-0");
+        fabMenuButton.classList.remove("right-5");
     
     rectangularMenuButton.classList.remove("rotate-180");
     rectangularMenuItemText.forEach((rectText) => {
@@ -135,6 +136,7 @@ showMenuButton.forEach((button) => {
             }
             else if (button.className.includes("fab-menu") && icon.className.includes("fab-menu")) {
                 icon.classList.add("display-menu");
+                icon.classList.add("right-5");
             }
             else if (button.className.includes("sheet-menu") && icon.className.includes("sheet-menu")) {
                 icon.classList.add("display-menu");
