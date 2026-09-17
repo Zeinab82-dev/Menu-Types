@@ -113,6 +113,7 @@ showMenuButton.forEach((button) => {
             
             if (button.className.includes("grid-menu") && icon.className.includes("grid-menu")) {
                 icon.classList.add("display-menu");
+                icon.classList.add("anime");
             }
             else if (button.className.includes("side-menu") && icon.className.includes("side-menu")) {
                 icon.classList.add("display-menu");
@@ -140,6 +141,7 @@ showMenuButton.forEach((button) => {
             }
             else if (button.className.includes("dot-menu") && icon.className.includes("dot-menu")) {
                 icon.classList.add("display-menu");
+                icon.classList.add("anime");
             }
             else if (button.className.includes("rectangular-menu") && icon.className.includes("rectangular-menu")) {
                 icon.classList.add("display-menu");
