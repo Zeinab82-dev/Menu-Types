@@ -125,8 +125,10 @@ showMenuButton.forEach((button) => {
                 });
                 tabbarMenuItem.forEach((tItem) => {
                     tItem.classList.remove("tab-open");
+                    tItem.querySelector(".tab-title").classList.remove("!-bottom-7");
                 });
                 tabbarMenuItemHome.classList.add("tab-open");
+                tabbarMenuItemHome.querySelector(".tab-title").classList.add("!-bottom-7");
                 tabbarMenuItemHome.querySelector(".tab-svg").classList.add("tab-icon");
                 tabbarMenu.classList.add("bottom-0");
                 icon.classList.add("display-menu");
@@ -198,14 +200,18 @@ sideMenuCloseButton.addEventListener("click", () => {
 // <<< Tab Bar menu >>>
 tabbarMenuItem.forEach((tabItem) => {
     tabbarMenuItemHome.classList.add("tab-open");
+    tabbarMenuItemHome.querySelector(".tab-title").classList.add("!-bottom-7");
+    
     tabbarMenuItemHome.querySelector(".tab-svg").classList.add("tab-icon");
     tabItem.addEventListener("click",() => {
         tabbarMenuItem.forEach((tbItem) => {
             tbItem.classList.remove("tab-open");
             tbItem.querySelector(".tab-svg").classList.remove("tab-icon");
+            tbItem.querySelector(".tab-title").classList.remove("!-bottom-7");
         });
         tabItem.classList.add("tab-open");
         tabItem.querySelector(".tab-svg").classList.add("tab-icon");
+        tabItem.querySelector(".tab-title").classList.add("!-bottom-7");
     });
 });
 
