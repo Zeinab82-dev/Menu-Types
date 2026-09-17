@@ -13,6 +13,7 @@
         --border-b-items: rgba(255,255,255,0.2);
         --hover-menu-items: rgba(255,255,255,0.2);
         --blue: #000443;
+        --blue1: #000666;
       }
     </style>
 </head>
@@ -334,6 +335,43 @@
             </ul>
         </section>
         <!-- <<< Sheet menu >>> -->
+        <section id="sheet-menu" class="absolute w-full max-w-[600px] z-30 -bottom-[330px] left-1/2 -translate-x-1/2 px-10 pt-14 pb-6 rounded-tl-[20px] rounded-tr-[20px] bg-(--blue) shadow-[0_0_10px_rgba(255,255,255,0.4),0_0_15px_rgba(255,255,255,0.3)_inset] transition-all duration-500">
+            <ul class="relative flex flex-col">
+                <li class="flex items-center gap-4 py-4">
+                    <svg class="size-6 fill-white">
+                        <use href="./assets/icons/icons.svg#copy-icon"></use>
+                    </svg>
+                    <h3 class="capitalize text-white">
+                        copy link
+                    </h3>
+                </li>
+                <li class="flex items-center gap-4 py-4">
+                    <svg class="size-6 fill-white">
+                        <use href="./assets/icons/icons.svg#share-2-icon"></use>
+                    </svg>
+                    <h3 class="capitalize text-white">
+                        share
+                    </h3>
+                </li>
+                <li class="flex items-center gap-4 py-4">
+                    <svg class="size-6 fill-white">
+                        <use href="./assets/icons/icons.svg#heart-add-icon"></use>
+                    </svg>
+                    <h3 class="capitalize text-white">
+                        add to favorites
+                    </h3>
+                </li>
+                <li class="flex items-center gap-4 py-4">
+                    <svg class="size-6 fill-white">
+                        <use href="./assets/icons/icons.svg#download-icon"></use>
+                    </svg>
+                    <h3 class="capitalize text-white">
+                        download image
+                    </h3>
+                </li>
+                <button class="close-sheet-menu absolute w-[90px] h-[5px] z-31 -top-8 left-1/2 -translate-x-1/2 rounded-full bg-white/60"></button>
+            </ul>
+        </section>
         <!-- <<< Three Dots menu >>> -->
         <section id="threedots-menu" class="absolute w-[200px] top-20 right-3 z-20 px-6 py-8 rounded-[20px] bg-white/90 backdrop-blur-[3px] shadow-[0_0_10px_rgba(0,0,0,0.5),0_0_10px_#000443_inset] transition-all duration-500 opacity-0 origin-top-right scale-0">
             <ul class="flex flex-col items-start">

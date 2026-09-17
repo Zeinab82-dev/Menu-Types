@@ -26,6 +26,10 @@ const tabbarMenuItemHome = document.querySelector(".home");
 const fabMenuButton = document.querySelector(".fab-menu-btn");
 const fabMenu = document.querySelector("#fab-menu");
 
+// <<< Select menu Sheet elements >>>
+const sheetMenu = document.querySelector("#sheet-menu");
+const SheetMenuButton = document.querySelector(".close-sheet-menu");
+
 // <<< Select menu Three Dots elements >>>
 const threeDotsMenu = document.querySelector("#threedots-menu");
 const threeDotsMenuButton = document.querySelector(".dots-menu-btn");
@@ -48,7 +52,7 @@ const rudderMenuItemLeft = document.querySelector(".rudder-item-left");
 
 const images = [];
 
-for (let i = 1; i <= 12; i++) {
+for (let i = 1; i <= 13; i++) {
     const img = new Image();
     img.src = `./assets/images/background-img-${i}.jpeg`;
     images.push(img);
@@ -60,7 +64,7 @@ for (let i = 1; i <= 12; i++) {
 
 showMenuButton.forEach((button) => {
     button.addEventListener("click", () => {
-        let random = Math.trunc(Math.random() * 12) + 1;
+        let random = Math.trunc(Math.random() * 13) + 1;
         
         bgImg.style.opacity = "0";
         setTimeout(() => {
@@ -70,6 +74,7 @@ showMenuButton.forEach((button) => {
 
         tabbarMenu.classList.remove("bottom-0");
         fabMenu.classList.remove("scale-y-100","bottom-24","opacity-100");
+        sheetMenu.classList.remove("bottom-[-250px]","!bottom-0");
         rudderMenu.classList.remove("bottom-0");
         rudderMenuItemLeft.classList.remove("right-21","-translate-x-[21]");
     rudderMenuItemRight.classList.remove("left-13","-translate-x-[13]");
@@ -93,6 +98,7 @@ showMenuButton.forEach((button) => {
             });
         },200);
     });
+
         
         showMenuButton.forEach((btn) => {
             btn.style.opacity = "0.8";
@@ -110,6 +116,7 @@ showMenuButton.forEach((button) => {
             }
             else if (button.className.includes("side-menu") && icon.className.includes("side-menu")) {
                 icon.classList.add("display-menu");
+                icon.classList.add("anime");
             }
             else if (button.className.includes("tab-menu") && icon.className.includes("tab-menu")) {
                 tabbarMenuIcon.forEach((tIcon) => {
@@ -128,12 +135,15 @@ showMenuButton.forEach((button) => {
             }
             else if (button.className.includes("sheet-menu") && icon.className.includes("sheet-menu")) {
                 icon.classList.add("display-menu");
+                SheetMenuButton.classList.add("anime")
+                sheetMenu.classList.add("bottom-[-250px]");
             }
             else if (button.className.includes("dot-menu") && icon.className.includes("dot-menu")) {
                 icon.classList.add("display-menu");
             }
             else if (button.className.includes("rectangular-menu") && icon.className.includes("rectangular-menu")) {
                 icon.classList.add("display-menu");
+                rectangularMenuButton.classList.add("anime")
                 rectangularMenu.classList.add("!left-0")
             }
             else if (button.className.includes("rudder-menu") && icon.className.includes("rudder-menu")) {
@@ -203,6 +213,13 @@ fabMenuButton.addEventListener("click", () => {
     fabMenu.classList.toggle("scale-y-100");
     fabMenu.classList.toggle("bottom-24");
     fabMenu.classList.toggle("opacity-100");
+});
+
+
+// <<< Sheet menu >>>
+SheetMenuButton.addEventListener("click", () => {
+    sheetMenu.classList.toggle("!bottom-0");
+    SheetMenuButton.classList.add("anime")
 });
 
 

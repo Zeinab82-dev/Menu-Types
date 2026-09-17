@@ -130,3 +130,21 @@ img {
 .active-button {
     display: block;
 }
+
+
+.anime {
+    animation: pp 2s infinite;
+    animation-delay: 2s;
+}
+
+@keyframes pp {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
