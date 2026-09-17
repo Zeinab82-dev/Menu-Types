@@ -34,7 +34,7 @@
 
         <!-- <<< Menu display buttons >>> -->
         <section class="box-btn fixed top-1/2 left-1/2 -translate-1/2 z-20 pt-20">
-            <section class="btn grid-menu">
+            <section class="btn grid-menu cursor-pointer">
                 <div class="img-box">
                     <img src="./assets/images/icon/grid.webp" alt="" class="">
                 </div>
@@ -45,7 +45,7 @@
                 </p>
                 <div class="active"></div>
             </section>
-            <section class="btn side-menu">
+            <section class="btn side-menu cursor-pointer">
                 <div class="img-box">
                     <img src="./assets/images/icon/side.webp" alt="" class="">
                 </div>
@@ -56,7 +56,7 @@
                 </p>
                 <div class="active"></div>
             </section>
-            <section class="btn tab-menu">
+            <section class="btn tab-menu cursor-pointer">
                 <div class="img-box">
                     <img src="./assets/images/icon/tab.webp" alt="" class="">
                 </div>
@@ -67,7 +67,7 @@
                 </p>
                 <div class="active"></div>
             </section>
-            <section class="btn fab-menu">
+            <section class="btn fab-menu cursor-pointer">
                 <div class="img-box">
                     <img src="./assets/images/icon/fab.webp" alt="" class="">
                 </div>
@@ -78,7 +78,7 @@
                 </p>
                 <div class="active"></div>
             </section>
-            <section class="btn sheet-menu">
+            <section class="btn sheet-menu cursor-pointer">
                 <div class="img-box">
                     <img src="./assets/images/icon/sheet.webp" alt="" class="">
                 </div>
@@ -89,7 +89,7 @@
                 </p>
                 <div class="active"></div>
             </section>
-            <section class="btn dot-menu">
+            <section class="btn dot-menu cursor-pointer">
                 <div class="img-box">
                     <img src="./assets/images/icon/dot.webp" alt="" class="">
                 </div>
@@ -100,7 +100,7 @@
                 </p>
                 <div class="active"></div>
             </section>
-            <section class="btn rectangular-menu">
+            <section class="btn rectangular-menu cursor-pointer">
                 <div class="img-box">
                     <img src="./assets/images/icon/rectangular.webp" alt="" class="">
                 </div>
@@ -111,7 +111,7 @@
                 </p>
                 <div class="active"></div>
             </section>
-            <section class="btn rudder-menu">
+            <section class="btn rudder-menu cursor-pointer">
                 <div class="img-box">
                     <img src="./assets/images/icon/rudder.webp" alt="" class="">
                 </div>
@@ -127,25 +127,25 @@
         <!-- <<< Menu Buttons >>> -->
         <section class="">
             <!-- <<< Grid Menu Button >>> -->
-            <button class="menu-btn grid-menu grid-menu-btn absolute top-5 left-5 z-20 text-white">
+            <button class="menu-btn grid-menu grid-menu-btn absolute top-5 left-5 z-20 text-white cursor-pointer">
                 <svg class="size-10" viewBox="0 0 24 24" fill="currentcolor">
                     <use href="./assets/icons/icons.svg#grid-menu-icon"></use>
                 </svg>
             </button>
             <!-- <<< Side Menu Button >>> -->
-            <button class="menu-btn side-menu side-menu-btn absolute top-5 left-5 z-20 text-white">
+            <button class="menu-btn side-menu side-menu-btn absolute top-5 left-5 z-20 text-white cursor-pointer">
                 <svg class="size-10" viewBox="0 0 24 24" fill="currentcolor">
                     <use href="./assets/icons/icons.svg#side-menu-icon"></use>
                 </svg>
             </button>
             <!-- <<< TabBar Menu Button >>> -->
-            <button class="menu-btn tab-menu absolute top-5 left-5 z-20 text-white">
+            <button class="menu-btn tab-menu absolute top-5 left-5 z-20 text-white cursor-pointer">
                 <svg class="size-10" viewBox="0 0 24 24" fill="currentcolor">
                     <use href="./assets/icons/icons.svg#"></use>
                 </svg>
             </button>
             <!-- <<< FAB Menu Button >>> -->
-            <button class="menu-btn fab-menu fab-menu-btn absolute bottom-5 -right-15 z-20 text-white size-14 rounded-full flex items-center justify-center bg-(--blue) shadow-[0_0_8px_rgba(0255,255,255,0.4),0_0_8px_rgba(0,0,0,0.4)_inset] border border-white/60 !opacity-100 !visited:">
+            <button class="menu-btn fab-menu fab-menu-btn absolute bottom-5 -right-15 z-20 text-white size-14 rounded-full flex items-center justify-center bg-(--blue) shadow-[0_0_8px_rgba(0255,255,255,0.4),0_0_8px_rgba(0,0,0,0.4)_inset] border border-white/60 !opacity-100 !visited cursor-pointer">
                 <svg class="size-8" viewBox="0 0 24 24" fill="currentcolor">
                     <use href="./assets/icons/icons.svg#fab-menu-icon"></use>
                 </svg>
@@ -157,7 +157,7 @@
                 </svg>
             </button>
             <!-- <<< ThreeDot Menu Button >>> -->
-            <button class="menu-btn dot-menu dots-menu-btn absolute top-5 right-5 z-20 text-white">
+            <button class="menu-btn dot-menu dots-menu-btn absolute top-5 right-5 z-20 text-white cursor-pointer">
                 <svg class="size-10" viewBox="0 0 24 24" fill="currentcolor">
                     <use href="./assets/icons/icons.svg#treedots-menu-icon"></use>
                 </svg>
@@ -384,7 +384,7 @@
                         download image
                     </h3>
                 </li>
-                <button class="close-sheet-menu absolute w-[90px] h-[5px] z-31 -top-8 left-1/2 -translate-x-1/2 rounded-full bg-white/60"></button>
+                <button class="close-sheet-menu absolute w-[90px] h-[5px] z-31 -top-8 left-1/2 -translate-x-1/2 rounded-full bg-white/60 cursor-pointer"></button>
             </ul>
         </section>
         <!-- <<< Three Dots menu >>> -->
@@ -484,7 +484,7 @@
                     </h2>
                 </li>
             </ul>
-            <button class="rectangular-menu-btn absolute z-30 top-20 -right-4 size-10 rounded-full flex items-center justify-center bg-(--blue) shadow-[0_0_3px_rgba(0255,255,255,0.4),0_0_8px_rgba(0,0,0,0.4)_inset] border-r border-r-white/60 transition-all duration-500">
+            <button class="rectangular-menu-btn absolute z-30 top-20 -right-4 size-10 rounded-full flex items-center justify-center bg-(--blue) shadow-[0_0_3px_rgba(0255,255,255,0.4),0_0_8px_rgba(0,0,0,0.4)_inset] border-r border-r-white/60 transition-all duration-500 cursor-pointer">
                 <svg class="size-6 fill-white">
                     <use href="./assets/icons/icons.svg#rectangular-menu-icon"></use>
                 </svg>
@@ -497,12 +497,12 @@
                     <use href="./assets/icons/icons.svg#plus-icon"></use>
                 </svg>
             </button>
-            <div class="rudder-item-left fixed bottom-3 -right-1/2 translate-x-1/2 size-16 rounded-full flex items-center justify-center bg-(--blue) backdrop-blur-[3px] border-[4.5px] border-[#000566] shadow-[0_0_7px_rgba(255,255,255,0.5),0_0_5px_rgba(0,0,0,0.7)_inset] transition-all duration-500">
+            <div class="rudder-item-left fixed bottom-3 -right-1/2 translate-x-1/2 size-16 rounded-full flex items-center justify-center bg-(--blue) backdrop-blur-[3px] border-[4.5px] border-[#000566] shadow-[0_0_7px_rgba(255,255,255,0.5),0_0_5px_rgba(0,0,0,0.7)_inset] transition-all duration-500 cursor-pointer">
                 <svg class="size-8 fill-white">
                     <use href="./assets/icons/icons.svg#chat-icon"></use>
                 </svg>
             </div>
-            <div class="rudder-item-right fixed bottom-3 left-1/2 -translate-x-1/2 size-16 rounded-full flex items-center justify-center bg-(--blue) backdrop-blur-[3px] border-[4.5px] border-[#000566] shadow-[0_0_7px_rgba(255,255,255,0.5),0_0_5px_rgba(0,0,0,0.7)_inset] transition-all duration-500">
+            <div class="rudder-item-right fixed bottom-3 left-1/2 -translate-x-1/2 size-16 rounded-full flex items-center justify-center bg-(--blue) backdrop-blur-[3px] border-[4.5px] border-[#000566] shadow-[0_0_7px_rgba(255,255,255,0.5),0_0_5px_rgba(0,0,0,0.7)_inset] transition-all duration-500 cursor-pointer">
                 <svg class="size-8 fill-white">
                     <use href="./assets/icons/icons.svg#settings-icon"></use>
                 </svg>

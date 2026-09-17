@@ -12,6 +12,9 @@
 body {
     font-family: "sansserif";
 }
+li, button {
+    cursor: pointer;
+}
 .logo {
     font-family: "Logo Font";
 }
